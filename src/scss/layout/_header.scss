@@ -1,8 +1,177 @@
 .header{
+    position: relative;
     &__nav{
+        height: 70px;
+        border-bottom: 1px solid #E0E0E0;
+        &-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+        }
+    }
+    &__left{
         display: flex;
         align-items: center;
+        justify-content: flex-start;
+        gap: 45px;
+        flex: 1 1 auto;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        list-style-type: none;
+        gap: 32px;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        transition: 300ms ease-out;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+        svg{
+            fill: #333;
+            transition: 300ms ease-out;
+        }
+        &:hover{
+            color: #FF6A1B;
+            svg{
+                fill: #FF6A1B;
+            }
+        }
+    }
+    &__link{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: none;
+        color: #333333;
+        transition: 300ms ease-out;
+        &:hover{
+            color: #FF6A1B;
+        }
+    }
+}
+.menu{
+    position: relative;
+    isolation: isolate;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+        background: #fff;
+        box-shadow: 0px 4px 8px 0px #00000014;
+    }
+    &__list{
+        display: flex;
         justify-content: space-between;
-        padding: 15px;
+        align-items: stretch;
+        height: 57px;
+    }
+    &__li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            .menu__content{
+                opacity: 1;
+                visibility: visible;
+            }
+            .menu__link{
+                color: #FF6A1B;
+                svg{
+                    transform: rotate(-180deg);
+                    fill: #FF6A1B;
+                }
+            }
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #333333;
+        gap: 1px;
+        transition: 300ms ease-out;
+        z-index: 2;
+        &.active{
+            color: #FF6A1B;
+            font-weight: 700;
+        }
+        svg{
+            transition: 300ms ease-out;
+            fill: #333;
+        }
+    }
+    &__content{
+        position: absolute;
+        transition: 300ms ease-out;
+        top: 57px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 10px 10px;
+        &-body{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px 24px;
+            padding: 30px 15px;
+        }
+    }
+    &__child{
+        width: calc(25% - 18px);
+        p{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+        &-list{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        &-link{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 5px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-decoration: none;
+            color: #333333;
+            transition: 300ms ease-out;
+            svg{
+                fill: #333;
+                transition: 300ms ease-out;
+            }
+            &:hover{
+                color: #FF6A1B;
+                svg{
+                    fill: #FF6A1B;
+                }
+            }
+        }
     }
 }
