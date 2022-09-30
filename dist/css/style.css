@@ -9,6 +9,7 @@
 .header {
   position: relative;
   z-index: 50;
+  background: #fff;
 }
 
 .header__nav {
@@ -297,6 +298,8 @@
 
 .intro {
   position: relative;
+  border-bottom: 1px solid #E0E0E0;
+  background: #fff;
 }
 
 .intro__body {
@@ -407,6 +410,85 @@
   width: 100%;
 }
 
+.direction__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+}
+
+.direction__item {
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: calc(25% - 18px);
+  padding: 15px 10px;
+}
+
+.direction__item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.direction__item-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.direction__item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.direction__item-link:hover {
+  color: #FF6A1B;
+}
+
+.direction__item-link:hover svg {
+  fill: #FF6A1B;
+}
+
+.direction__item-link svg {
+  fill: #333;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -424,6 +506,10 @@
 html,
 body {
   height: 100%;
+}
+
+body {
+  background: #F9F8F4;
 }
 
 .wrapper {
@@ -563,6 +649,27 @@ ul {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.sections {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 80px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 576px) {
