@@ -34,9 +34,11 @@ mixin direction-item()
                     | Приложения 
 
 mixin direction()
-    .direction 
+    .direction  
+        .direction__el-big
+        .direction__el-sml
         .direction__body.container 
-            h2.title.direction__title Направление обучения
+            h2.title.direction__title.mb-40 Направление обучения
             .direction__content 
                 +direction-item
                 +direction-item

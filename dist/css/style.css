@@ -410,6 +410,42 @@
   width: 100%;
 }
 
+.direction {
+  position: relative;
+}
+
+.direction__el-big {
+  position: absolute;
+  bottom: 20px;
+  left: -85px;
+  z-index: -1;
+  width: 174px;
+  height: 174px;
+  background: #FF6A1B;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  border-radius: 10px;
+  -webkit-transform: rotate(6.46deg);
+      -ms-transform: rotate(6.46deg);
+          transform: rotate(6.46deg);
+}
+
+.direction__el-sml {
+  position: absolute;
+  bottom: -65px;
+  left: 89px;
+  z-index: -1;
+  width: 76px;
+  height: 76px;
+  background: #A64AC9;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  border-radius: 10px;
+  -webkit-transform: rotate(-25.56deg);
+      -ms-transform: rotate(-25.56deg);
+          transform: rotate(-25.56deg);
+}
+
 .direction__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -487,6 +523,59 @@
   -webkit-transition: 300ms ease-out;
   -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
+}
+
+.help__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px 24px;
+}
+
+.help__item {
+  width: calc(50% - 12px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.help__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.help__item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.help__item-p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
 }
 
 * {
@@ -669,7 +758,15 @@ ul {
   line-height: 29px;
   text-align: center;
   color: #333333;
+  margin-bottom: 30px;
+}
+
+.title.mb-40 {
   margin-bottom: 40px;
+}
+
+.title.mb-20 {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 576px) {

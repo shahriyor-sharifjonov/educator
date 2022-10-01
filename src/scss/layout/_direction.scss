@@ -1,4 +1,31 @@
 .direction{
+    position: relative;
+    &__el{
+        &-big{
+            position: absolute;
+            bottom: 20px;
+            left: -85px;
+            z-index: -1;
+            width: 174px;
+            height: 174px;
+            background: #FF6A1B;
+            filter: blur(2px);
+            border-radius: 10px;
+            transform: rotate(6.46deg);
+        }
+        &-sml{
+            position: absolute;
+            bottom: -65px;
+            left: 89px;
+            z-index: -1;
+            width: 76px;
+            height: 76px;
+            background: #A64AC9;
+            filter: blur(2px);
+            border-radius: 10px;
+            transform: rotate(-25.56deg);
+        }
+    }
     &__content{
         display: flex;
         justify-content: space-between;
