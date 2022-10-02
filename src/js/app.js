@@ -25,3 +25,13 @@ new Swiper('.schools__swiper', {
         prevEl: '.schools__prev',
     },
 });
+
+new Swiper('.teachers__swiper', {
+    modules: [Navigation],
+    slidesPerView: 4,
+    spaceBetween: 24,
+    navigation: {
+        nextEl: '.teachers__next',
+        prevEl: '.teachers__prev',
+    },
+});
