@@ -1,4 +1,29 @@
 .courses{
+    position: relative;
+    &__el{
+        &-top{
+            position: absolute;
+            top: 20px;
+            right: -50px;
+            width: 118px;
+            height: 118px;
+            background: #FCCD05;
+            filter: blur(2px);
+            border-radius: 10px;
+            transform: rotate(29.71deg);                    
+        }
+        &-bot{
+            position: absolute;
+            bottom: -25px;
+            right: -49px;
+            width: 90px;
+            height: 90px;
+            background: #A64AC9;
+            filter: blur(2px);
+            border-radius: 10px;
+            transform: rotate(3.61deg);                 
+        }
+    }
     &__cat{
         width: 100%;
         overflow: auto;

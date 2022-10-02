@@ -228,9 +228,9 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 40px 24px;
@@ -578,6 +578,40 @@
   color: #333333;
 }
 
+.courses {
+  position: relative;
+}
+
+.courses__el-top {
+  position: absolute;
+  top: 20px;
+  right: -50px;
+  width: 118px;
+  height: 118px;
+  background: #FCCD05;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  border-radius: 10px;
+  -webkit-transform: rotate(29.71deg);
+      -ms-transform: rotate(29.71deg);
+          transform: rotate(29.71deg);
+}
+
+.courses__el-bot {
+  position: absolute;
+  bottom: -25px;
+  right: -49px;
+  width: 90px;
+  height: 90px;
+  background: #A64AC9;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  border-radius: 10px;
+  -webkit-transform: rotate(3.61deg);
+      -ms-transform: rotate(3.61deg);
+          transform: rotate(3.61deg);
+}
+
 .courses__cat {
   width: 100%;
   overflow: auto;
@@ -826,6 +860,8 @@ body {
 }
 
 body {
+  width: 100%;
+  overflow-x: hidden;
   background: #F9F8F4;
 }
 
