@@ -840,6 +840,132 @@
   color: #FFFFFF;
 }
 
+.schools {
+  position: relative;
+}
+
+.schools__el-top {
+  position: absolute;
+  top: 20px;
+  right: -50px;
+  width: 118px;
+  height: 118px;
+  background: #FCCD05;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  border-radius: 10px;
+  -webkit-transform: rotate(29.71deg);
+      -ms-transform: rotate(29.71deg);
+          transform: rotate(29.71deg);
+}
+
+.schools__el-bot {
+  position: absolute;
+  bottom: -25px;
+  right: -49px;
+  width: 90px;
+  height: 90px;
+  background: #A64AC9;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  border-radius: 10px;
+  -webkit-transform: rotate(3.61deg);
+      -ms-transform: rotate(3.61deg);
+          transform: rotate(3.61deg);
+}
+
+.schools__content {
+  width: 100%;
+  position: relative;
+}
+
+.schools__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -64px;
+  width: calc(100% + 128px);
+}
+
+.schools__navigation * {
+  pointer-events: all;
+}
+
+.schools__swiper {
+  width: calc(100% + 24px);
+  margin-left: -12px;
+  padding: 0 12px;
+  overflow: hidden;
+}
+
+.schools__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 30px;
+}
+
+.schools__item {
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 15px 10px;
+}
+
+.schools__item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.schools__item-img img {
+  max-width: 100%;
+}
+
+.schools__item-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 6px 12px;
+  border: 1px solid #A64AC9;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #A64AC9;
+}
+
 * {
   margin: 0;
   padding: 0;
