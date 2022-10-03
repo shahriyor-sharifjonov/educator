@@ -1141,6 +1141,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 .reviews__item {
@@ -1150,7 +1151,6 @@
   border-radius: 10px;
   position: relative;
   padding: 15px 10px;
-  margin-bottom: 30px;
 }
 
 .reviews__item-action {
