@@ -79,8 +79,10 @@ window.onclick = (e) => {
   if (headerMenuOpen && !e.composedPath().includes(headerButton) && !e.composedPath().includes(headerMenu)){
     headerMenuToggle();
   }
-  if(searchOpened && e.target.classList.contains('search-sm__wrap')){
-    // console.log(e.target);
+  if (searchOpened && !e.composedPath().includes(searchBtn) && !e.composedPath().includes(searchContent)){
+    searchToggle();
+  }
+  if (searchOpened && e.target.classList.contains('search-sm__wrap')){
     searchToggle()   
   }
 };
