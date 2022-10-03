@@ -130,3 +130,38 @@ ul{
         margin-bottom: 20px;
     }
 }
+.text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    position: relative;
+    &__el{
+        position: absolute;
+        bottom: -115px;
+        left: -68px;
+        width: 150px;
+        height: 150px;
+        background: #A64AC9;
+        filter: blur(2px);
+        border-radius: 10px;
+        transform: rotate(-14.04deg);
+    }
+    &__title{
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    &__p{
+        &:not(:last-of-type){
+            margin-bottom: 15px;
+        }
+    }
+    &__ul{
+        list-style-type: disc;
+        padding-left: 16px;
+        margin-top: 15px;
+        &:not(:last-of-type){
+            margin-bottom: 15px;
+        }
+    }
+}
