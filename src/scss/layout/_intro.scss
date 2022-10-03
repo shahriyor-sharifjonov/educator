@@ -2,23 +2,40 @@
     position: relative;
     border-bottom: 1px solid #E0E0E0;
     background: #fff;
+    overflow: hidden;
     &__body{
+        position: relative;
         padding: 58px 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include media(992){
+            flex-direction: column;
+            gap: 40px;
+            padding: 30px 15px;
+        }
     }
     &__el{
         &-left-bot{
             position: absolute;
-            left: 30px;
-            bottom: 42px;
+            left: -70px;
+            bottom: 50px;
             width: 50px;
             height: 50px;
             background: #FCCD05;
             filter: blur(2px);
             border-radius: 10px;
             transform: rotate(-21.83deg);
+            @include media(992){
+                left: -30px;
+                bottom: 477px;
+            }
+            @include media(768){
+                bottom: 359px;
+            }
+            @include media(576){
+                bottom: 234px;
+            }
         }
         &-mid-top{
             position: absolute;
@@ -31,6 +48,9 @@
             filter: blur(2px);
             border-radius: 10px;
             transform: rotate(-33.29deg);
+            @include media(992){
+                display: none;
+            }
         }
         &-mid-bot{
             position: absolute;
@@ -43,22 +63,35 @@
             filter: blur(2px);
             border-radius: 10px;
             transform: rotate(-33.29deg);
+            @include media(992){
+                left: -7px;
+                right: auto;
+                transform: rotate(15.85deg);
+            }
         }
         &-right-bot{
             position: absolute;
-            right: 62px;
-            bottom: 88px;
+            right: -81px;
+            bottom: 100px;
             width: 110px;
             height: 110px;
             background: #A64AC9;
             filter: blur(2px);
             border-radius: 10px;
             transform: rotate(-13.39deg);
+            @include media(576){
+                width: 70px;
+                height: 70px;
+                right: -40px;
+            }
         }
     }
     &__content{
         max-width: 552px;
         width: 50%;
+        @include media(992){
+            width: 100%;
+        }
     }
     &__title{
         font-weight: 600;
@@ -66,6 +99,11 @@
         line-height: 44px;
         color: #333333;
         margin-bottom: 20px;
+        @include media(768){
+            font-size: 26px;
+            line-height: 32px;
+            margin-bottom: 10px;
+        }
     }
     &__desc{
         font-weight: 500;
@@ -73,9 +111,22 @@
         line-height: 20px;
         color: #333333;
         margin-bottom: 80px;
+        @include media(992){
+            margin-bottom: 40px;
+        }
+        @include media(768){
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
     &__img{
         max-width: 50%;
+        @include media(992){
+            max-width: 100%;
+        }
+        @include media(576){
+            max-width: 290px;
+        }
         img{
             width: 100%;
         }
