@@ -1,1 +1,88 @@
-// Футер
+.footer{
+    background: #4F4F4F;
+    position: relative;
+    padding: 30px 0;
+    .logo{
+        margin-bottom: 20px;
+    }
+    &__body{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 90px;
+    }
+    &__left{
+        max-width: 264px;
+    }
+    &__p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #BDBDBD;
+    }
+    &__mid{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 100px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+    &__link{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    &__right{
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__search{
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        &-input{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            border: 1px solid #E0E0E0;
+            border: none;
+            background: #FFFFFF;
+            padding: 0 15px;
+        }
+        &-btn{
+            margin-left: -4px;
+            background: #A64AC9;
+            padding: 8px 16px;
+            border-radius: 4px 12px 12px 4px;
+        }
+    }
+    &__soc{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-bottom: 15px;
+        &-item{
+            text-decoration: none;
+        }
+    }
+    &__copy{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        color: #BDBDBD;
+    }
+}

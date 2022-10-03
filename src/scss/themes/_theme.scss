@@ -39,6 +39,14 @@ button{
     justify-content: flex-start;
     width: max-content;
     text-decoration: none;
+    &.white{
+        .logo__title{
+            color: #fff;
+        }
+        .logo__desc{
+            color: #E0E0E0;
+        }
+    }
     &__title{
         font-weight: 400;
         font-size: 24px;
