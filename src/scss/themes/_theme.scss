@@ -74,22 +74,80 @@ ul{
     list-style-type: none;
 }
 .search{
-    background: #FFFFFF;
-    border: 1px solid #E0E0E0;
     border-radius: 12px;
     height: 36px;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
     max-width: 392px;
     width: 100%;    
+    &-sm{
+        display: none;
+        @include media(1200){
+            display: block;
+            margin-right: 15px;
+        }
+        &__btn{
+            transition: 300ms ease-out;
+            line-height: 0;
+            svg{
+                fill: #333;
+            }
+            &.active{
+                svg{
+                    fill: #FF6A1B;
+                }
+            }
+        }
+        &__wrap{
+            position: absolute;
+            width: 100%;
+            top: 127px;
+            left: 0;
+            height: calc(100vh - 127px);
+            padding: 20px 15px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 300ms ease-out;
+            &.open{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        &__close{
+            background: rgba(#333333, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+        }
+        &__content{
+            background: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            .search{
+                display: flex;
+            }
+        }
+    }
+    @include media(1200){
+        display: none;
+    }
     &__input{
-        width: calc(100% - 52px);
+        width: 100%;
         border: none;
         padding: 0 17px;
+        background: #FFFFFF;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
+        border-radius: 12px 0 0 12px;
+        border: 1px solid #E0E0E0;
+        margin-right: -5px;
     }
     &__button{
         background: #A64AC9;
@@ -98,9 +156,8 @@ ul{
         align-items: center;
         justify-content: center;
         padding: 8px 16px;
-        height: calc(100% + 2px);
+        height: 100%;
         width: 52px;
-        margin-top: -1px;
     }
 }
 .btn{
