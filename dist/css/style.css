@@ -2453,6 +2453,45 @@
   background: rgba(255, 106, 27, 0.8);
 }
 
+.faq__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.faq__item {
+  background: #FFFFFF;
+  padding: 15px 20px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.faq__item-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.faq__item-content {
+  display: none;
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.faq__item-content.active {
+  display: block;
+}
+
 * {
   margin: 0;
   padding: 0;

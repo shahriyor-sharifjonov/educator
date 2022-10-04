@@ -1,0 +1,30 @@
+.faq{
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__item{
+        background: #FFFFFF;
+        padding: 15px 20px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;        
+        &-btn{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #333333;
+        }
+        &-content{
+            display: none;
+            padding-top: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;
+            &.active{
+                display: block;
+            }
+        }
+    }
+}

@@ -35,11 +35,23 @@ mixin direction-item()
 
 mixin direction()
     .direction  
-        //- .direction__els
-        //-     .direction__el-big
-        //-     .direction__el-sml
         .direction__body.container 
             h2.title.direction__title.mb-40 Направление обучения
+            .direction__content 
+                +direction-item 
+                +direction-item 
+                +direction-item 
+                +direction-item 
+                +direction-item 
+                +direction-item 
+                +direction-item 
+                +direction-item 
+
+
+mixin direction-katalog()
+    .direction  
+        .direction__body.container 
+            h2.title.direction__title.mb-40 Другие курсы по программированию
             .direction__content 
                 +direction-item 
                 +direction-item 
