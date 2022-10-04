@@ -224,10 +224,16 @@ ul{
         left: -68px;
         width: 150px;
         height: 150px;
+        z-index: -1;
         background: #A64AC9;
         filter: blur(2px);
         border-radius: 10px;
         transform: rotate(-14.04deg);
+        @include media(576){
+            width: 87px;
+            height: 87px;
+            transform: rotate(17.47deg);
+        }
     }
     &__title{
         text-align: left;

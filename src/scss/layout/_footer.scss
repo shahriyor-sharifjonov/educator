@@ -10,9 +10,23 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 90px;
+        @include media(1200){
+            gap: 50px;
+        }
+        @include media(992){
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
     }
     &__left{
         max-width: 264px;
+        @include media(992){
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__p{
         font-weight: 500;
@@ -25,6 +39,9 @@
         justify-content: space-between;
         align-items: flex-start;
         gap: 100px;
+        @include media(992){
+            gap: 75px;
+        }
     }
     &__list{
         display: flex;
@@ -32,6 +49,9 @@
         align-items: flex-start;
         justify-content: flex-start;
         gap: 12px;
+        @include media(992){
+            align-items: center;
+        }
     }
     &__link{
         font-weight: 600;
@@ -39,12 +59,21 @@
         line-height: 17px;
         color: #FFFFFF;
         text-decoration: none;
+        @include media(992){
+            text-align: center;
+        }
     }
     &__right{
         flex: 1 1 auto;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        @include media(992){
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__search{
         height: 36px;
@@ -53,6 +82,9 @@
         border-radius: 12px;
         overflow: hidden;
         margin-bottom: 30px;
+        @include media(992){
+            margin-bottom: 20px;
+        }
         &-input{
             font-weight: 500;
             font-size: 14px;
