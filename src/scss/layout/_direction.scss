@@ -1,6 +1,17 @@
 .direction{
     position: relative;
     &__el{
+        &s{
+            @include media(768){
+                pointer-events: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow-x: hidden;
+            }
+        }
         &-big{
             position: absolute;
             bottom: 20px;
@@ -12,6 +23,13 @@
             filter: blur(2px);
             border-radius: 10px;
             transform: rotate(6.46deg);
+            @include media(768){
+                width: 75px;
+                height: 75px;
+                right: -60px;
+                left: auto;
+                bottom: 190px;
+            }
         }
         &-sml{
             position: absolute;
@@ -24,6 +42,12 @@
             filter: blur(2px);
             border-radius: 10px;
             transform: rotate(-25.56deg);
+            @include media(768){
+                top: 239px;
+                bottom: auto;
+                left: -32px;
+                transform: rotate(-0.88deg);
+            }
         }
     }
     &__content{
@@ -31,6 +55,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 24px;
+        @include media(992){
+            gap: 15px;
+        }
     }
     &__item{
         background: #FFFFFF;
@@ -38,12 +65,19 @@
         border-radius: 10px;
         width: calc(25% - 18px);
         padding: 15px 10px;
+        @include media(992){
+            width: calc(50% - 7.5px);
+        }
         &-title{
             font-weight: 600;
             font-size: 18px;
             line-height: 22px;
             color: #333333;  
-            margin-bottom: 20px;          
+            margin-bottom: 20px; 
+            @include media(576){
+                font-size: 18px;
+                line-height: 22px;
+            }         
         }
         &-list{
             display: flex;
@@ -61,7 +95,13 @@
             line-height: 20px;
             color: #333333;
             transition: 300ms ease-out;
-            width: max-content;
+            width: 100%;
+            span{
+                width: calc(100% - 25px);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
             &:hover{
                 color: #FF6A1B;
                 svg{

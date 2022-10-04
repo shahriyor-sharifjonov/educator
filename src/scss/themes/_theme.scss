@@ -180,6 +180,10 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 80px;
+    @include media(576){
+        padding: 60px 0;
+        gap: 60px;
+    }
 }
 .title{
     font-weight: 600;
@@ -188,8 +192,16 @@ ul{
     text-align: center;
     color: #333333;
     margin-bottom: 30px;
+    @include media(576){
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
     &.mb-40{
         margin-bottom: 40px;
+        @include media(576){
+            margin-bottom: 20px;
+        }
     }
     &.mb-20{
         margin-bottom: 20px;
