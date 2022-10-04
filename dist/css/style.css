@@ -2336,6 +2336,16 @@ ul {
     visibility: visible !important;
   }
 
+  .help__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
   .search-sm {
     display: block;
     margin-right: 15px;
@@ -2488,6 +2498,14 @@ ul {
     -webkit-transform: rotate(-0.88deg);
         -ms-transform: rotate(-0.88deg);
             transform: rotate(-0.88deg);
+  }
+
+  .help__content {
+    gap: 15px;
+  }
+
+  .help__item {
+    width: 100%;
   }
 }
 
