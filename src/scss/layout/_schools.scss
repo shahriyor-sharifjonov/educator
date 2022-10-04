@@ -82,6 +82,10 @@
             border-radius: 5px;
             text-decoration: none;
             color: #A64AC9;
+            transition: 300ms ease-out;
+            &:hover{
+                opacity: 0.8;
+            }
         }
     }
 }

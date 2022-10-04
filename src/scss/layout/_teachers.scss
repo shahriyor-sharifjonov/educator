@@ -148,6 +148,10 @@
             border-radius: 5px;
             text-decoration: none;
             color: #FFFFFF;
+            transition: 300ms ease-out;
+            &:hover{
+                background: rgba(#A64AC9, 0.8);
+            }
         }
     }
     &__btn{

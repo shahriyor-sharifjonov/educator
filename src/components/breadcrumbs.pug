@@ -1,0 +1,25 @@
+mixin breadcrumbs-info()
+    .breadcrumbs 
+        .breadcrumbs__body.container 
+            .breadcrumbs__content 
+                a(href="index.html") Главная
+                span /
+                a(href="katalog.html") Каталог курсов
+                span /
+                a(href="katalog.html") Программирование
+                span /
+                a(href="#!").active C#
+            .breadcrumbs__info 
+                p Информация актуальна на 10.09.22
+
+mixin breadcrumbs()
+    .breadcrumbs 
+        .breadcrumbs__body.container 
+            .breadcrumbs__content 
+                a(href="#!") Главная
+                span /
+                a(href="#!") Каталог курсов
+                span /
+                a(href="#!") Программирование
+                span /
+                a(href="#!").active C#

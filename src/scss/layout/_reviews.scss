@@ -147,5 +147,9 @@
         margin-right: auto;
         width: max-content;
         color: #FFFFFF;
+        transition: 300ms ease-out;
+        &:hover{
+            background: rgba(#FF6A1B, 0.8);
+        }
     }
 }

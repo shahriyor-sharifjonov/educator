@@ -30,6 +30,33 @@ if(document.querySelector('.courses__cat-track')){
   })
 }
 
+if(document.querySelector('.products__tag')){
+  const items = document.querySelectorAll('.products__tag-item');
+  const btn = document.querySelector('.products__tag-btn');
+  let open = false;
+  btn.addEventListener('click', () => {
+    open = !open;
+    if(open){
+      btn.innerHTML = 'Свернуть'
+    }else{
+      btn.innerHTML = 'Показать все'
+    }
+    items.forEach(el => {
+      el.classList.toggle('open')
+    })
+  })
+  items.forEach(el => {
+    el.addEventListener('click', () => {
+      el.classList.toggle('active')
+    })
+  })
+  for(let i = 0; i < items.length; i++){
+    if(i > 5){
+      items[i].classList.add('dn')
+    }
+  }
+}
+
 new Swiper('.courses__swiper', {
   modules: [Navigation, Pagination],
   slidesPerView: 1,
