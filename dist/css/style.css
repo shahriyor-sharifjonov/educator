@@ -1084,6 +1084,7 @@
   -webkit-transform: rotate(29.71deg);
       -ms-transform: rotate(29.71deg);
           transform: rotate(29.71deg);
+  z-index: -1;
 }
 
 .courses__el-bot {
@@ -1102,10 +1103,13 @@
 }
 
 .courses__cat {
-  width: 100%;
+  width: calc(100% + 30px);
+  margin-left: -15px;
   overflow: auto;
   padding-bottom: 15px;
   margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .courses__cat-track {

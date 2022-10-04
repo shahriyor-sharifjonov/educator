@@ -32,11 +32,26 @@ if(document.querySelector('.courses__cat-track')){
 
 new Swiper('.courses__swiper', {
   modules: [Navigation],
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 24,
   navigation: {
     nextEl: '.courses__next',
     prevEl: '.courses__prev',
+  },
+  pagination: {
+    el: '.courses__pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
   },
 })
 
