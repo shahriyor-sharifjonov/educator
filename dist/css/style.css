@@ -1176,6 +1176,10 @@
   pointer-events: all;
 }
 
+.courses__pagination {
+  display: none;
+}
+
 .courses__swiper {
   width: calc(100% + 24px);
   margin-left: -12px;
@@ -1386,6 +1390,10 @@
   width: -moz-max-content;
   width: max-content;
   margin-bottom: 30px;
+}
+
+.schools__pagination {
+  display: none;
 }
 
 .schools__item {
@@ -2267,6 +2275,90 @@ ul {
   }
 }
 
+@media (max-width: 1400px) {
+  .courses__navigation {
+    display: none;
+  }
+
+  .courses__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+    height: 12px;
+    gap: 8px;
+  }
+
+  .courses__pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #E0E0E0;
+    -webkit-transition: 300ms ease-out;
+    -o-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+  }
+
+  .courses__pagination .swiper-pagination-bullet-active {
+    background: #FF6A1B;
+  }
+
+  .courses__wrapper {
+    margin-bottom: 20px;
+  }
+
+  .schools__navigation {
+    display: none;
+  }
+
+  .schools__wrapper {
+    margin-bottom: 20px;
+  }
+
+  .schools__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+    height: 12px;
+    gap: 8px;
+  }
+
+  .schools__pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #E0E0E0;
+    -webkit-transition: 300ms ease-out;
+    -o-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+  }
+
+  .schools__pagination .swiper-pagination-bullet-active {
+    background: #FF6A1B;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .title.mb-40 {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 1200px) {
   .header__list {
     display: none;
@@ -2548,10 +2640,6 @@ ul {
   .title {
     font-size: 22px;
     line-height: 27px;
-    margin-bottom: 20px;
-  }
-
-  .title.mb-40 {
     margin-bottom: 20px;
   }
 }

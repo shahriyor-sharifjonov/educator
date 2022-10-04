@@ -194,6 +194,9 @@ ul{
     text-align: center;
     color: #333333;
     margin-bottom: 30px;
+    @include media(1400){
+        margin-bottom: 20px;
+    }
     @include media(576){
         font-size: 22px;
         line-height: 27px;
@@ -201,7 +204,7 @@ ul{
     }
     &.mb-40{
         margin-bottom: 40px;
-        @include media(576){
+        @include media(1400){
             margin-bottom: 20px;
         }
     }

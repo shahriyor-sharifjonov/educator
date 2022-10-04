@@ -14,6 +14,9 @@
         transform: translateY(-50%);
         left: -64px;
         width: calc(100% + 128px);
+        @include media(1400){
+            display: none;
+        }
         *{
             pointer-events: all;
         }
@@ -28,6 +31,30 @@
         display: flex;
         width: max-content;
         margin-bottom: 30px;
+        @include media(1400){
+            margin-bottom: 20px;
+        }
+    }
+    &__pagination{
+        display: none;
+        @include media(1400){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            height: 12px;
+            gap: 8px;
+            .swiper-pagination-bullet{
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: #E0E0E0;
+                transition: 300ms ease-out;
+                &-active{
+                    background: #FF6A1B;
+                }
+            }
+        }
     }
     &__item{
         background: #FFFFFF;
