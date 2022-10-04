@@ -16,10 +16,20 @@ mixin breadcrumbs()
     .breadcrumbs 
         .breadcrumbs__body.container 
             .breadcrumbs__content 
-                a(href="#!") Главная
+                a(href="index.html") Главная
                 span /
                 a(href="#!") Каталог курсов
                 span /
                 a(href="#!") Программирование
                 span /
                 a(href="#!").active C#
+
+mixin breadcrumbs-teacher()
+    .breadcrumbs 
+        .breadcrumbs__body.container 
+            .breadcrumbs__content 
+                a(href="index.html") Главная
+                span /
+                a(href="#!") Преподаватели
+                span /
+                a(href="#!").active Иванов Иван
