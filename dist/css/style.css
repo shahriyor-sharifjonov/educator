@@ -1139,8 +1139,13 @@
 }
 
 .courses__content {
+  display: none;
   width: 100%;
   position: relative;
+}
+
+.courses__content.active {
+  display: block;
 }
 
 .courses__navigation {
@@ -1954,6 +1959,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .wrapper .main {
