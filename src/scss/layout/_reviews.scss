@@ -5,6 +5,10 @@
         flex-direction: column;
         gap: 30px;
         margin-bottom: 30px;
+        @include media(1400){
+            gap: 20px;
+            margin-bottom: 20px;
+        }
     }
     &__el{
         &-top{
@@ -17,6 +21,12 @@
             filter: blur(2px);
             border-radius: 10px;
             transform: rotate(-11.66deg);
+            @include media(576){
+                left: auto;
+                right: -70px;
+                width: 87px;
+                height: 87px;
+            }
         }
         &-bot{
             position: absolute;
@@ -28,6 +38,27 @@
             filter: blur(2px);
             border-radius: 10px;
             transform: rotate(19.85deg);
+            @include media(576){
+                top: 600px;
+                left: -15px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &-orange{
+            display: none;
+            @include media(576){
+                display: block;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: -75px;
+                top: 680px;
+                background: #FF6A1B;
+                filter: blur(2px);
+                border-radius: 10px;
+                transform: matrix(-0.99, -0.15, -0.15, 0.99, 0, 0);
+            }
         }
     }
     &__item{

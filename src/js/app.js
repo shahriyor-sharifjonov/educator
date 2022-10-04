@@ -81,12 +81,52 @@ new Swiper('.schools__swiper', {
 })
 
 new Swiper('.teachers__swiper', {
-  modules: [Navigation],
-  slidesPerView: 4,
+  modules: [Navigation, Pagination],
+  slidesPerView: 1,
   spaceBetween: 24,
   navigation: {
     nextEl: '.teachers__next',
     prevEl: '.teachers__prev',
+  },
+  pagination: {
+    el: ".teachers__pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+})
+
+new Swiper('.news__swiper', {
+  modules: [Navigation, Pagination],
+slidesPerView: 1,
+  spaceBetween: 24,
+  navigation: {
+    nextEl: '.news__next',
+    prevEl: '.news__prev',
+  },
+  pagination: {
+    el: ".news__pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
   },
 })
 
