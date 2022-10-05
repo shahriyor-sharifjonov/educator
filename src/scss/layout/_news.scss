@@ -1,5 +1,10 @@
 .news{
     position: relative;
+    &.discounts{
+        .news__swiper{
+            margin-bottom: -30px;
+        }
+    }
     &__el{
         position: absolute;
         top: 50px;
@@ -71,6 +76,11 @@
         background: #FFFFFF;
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
+        &.discount{
+            .news__item-title{
+                margin-bottom: 20px;
+            }
+        }
         &-header{
             display: flex;
             justify-content: space-between;

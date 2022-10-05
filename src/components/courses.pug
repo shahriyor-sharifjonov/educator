@@ -188,3 +188,66 @@ mixin courses-block()
                 +courses-item
                 +courses-item
                 +courses-item
+
+mixin courses-school()
+    .courses 
+        .courses__body.container 
+            h2.title.courses__title.mb-20 Все курсы от SKillbox
+            .courses__cat   
+                .courses__cat-track 
+                    button(type="button" data-target="razrabotka").courses__cat-item.active Разработка
+                    button(type="button" data-target="dizayn").courses__cat-item Дизайн
+                    button(type="button" data-target="copyright").courses__cat-item Копирайтинг
+                    button(type="button" data-target="psy").courses__cat-item Психология
+            .courses__content.block#razrabotka.active 
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+            .courses__content.block#dizayn 
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+            .courses__content.block#copyright 
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+            .courses__content.block#psy 
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item
+                +courses-item

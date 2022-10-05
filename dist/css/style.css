@@ -1869,6 +1869,10 @@
   position: relative;
 }
 
+.news.discounts .news__swiper {
+  margin-bottom: -30px;
+}
+
 .news__el {
   position: absolute;
   top: 50px;
@@ -1939,6 +1943,10 @@
   -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+
+.news__item.discount .news__item-title {
+  margin-bottom: 20px;
 }
 
 .news__item-header {
