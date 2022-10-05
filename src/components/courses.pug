@@ -30,7 +30,7 @@ mixin courses-item()
 
 
 mixin courses()
-    .courses 
+    .courses#courses  
         .courses__body.container 
             h2.title.courses__title.mb-20 Популярные курсы 
             .courses__cat   
@@ -127,7 +127,7 @@ mixin courses()
 
 
 mixin courses-poxozh()
-    .courses.pohozh  
+    .courses.pohozh#courses-poxozh   
         .courses__body.container 
             h2.title.courses__title Похожие курсы
             .courses__content.active 
@@ -153,7 +153,7 @@ mixin courses-poxozh()
 
 
 mixin courses-block()
-    .courses
+    .courses#courses
         .courses__body.container 
             h2.title.courses__title.mb-20 Популярные курсы 
             .courses__cat   

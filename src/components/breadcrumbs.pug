@@ -12,6 +12,22 @@ mixin breadcrumbs-info()
             .breadcrumbs__info 
                 p Информация актуальна на 10.09.22
 
+mixin breadcrumbs-course()
+    .breadcrumbs 
+        .breadcrumbs__body.container 
+            .breadcrumbs__content 
+                a(href="index.html") Главная
+                span /
+                a(href="katalog.html") Каталог курсов
+                span /
+                a(href="katalog.html") Программирование
+                span /
+                a(href="#!") C#
+                span /
+                a(href="#!").active Разработчик C#: с нуля до PRO!
+            .breadcrumbs__info 
+                p Информация актуальна на 10.09.22
+
 mixin breadcrumbs()
     .breadcrumbs 
         .breadcrumbs__body.container 
