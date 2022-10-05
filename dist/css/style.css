@@ -1071,6 +1071,10 @@
   position: relative;
 }
 
+.courses.pohozh .courses__swiper {
+  margin-bottom: -30px;
+}
+
 .courses__el-top {
   position: absolute;
   top: 20px;
@@ -2584,6 +2588,7 @@
           box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 *:focus,
@@ -2864,6 +2869,10 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 80px;
+}
+
+.sections > div {
+  scroll-margin: 80px;
 }
 
 .sections.p-0 {
@@ -3731,6 +3740,10 @@ input {
 
   .products__item-action {
     gap: 10px;
+  }
+
+  .sections > div {
+    scroll-margin: 60px;
   }
 
   .sections.p-0 {

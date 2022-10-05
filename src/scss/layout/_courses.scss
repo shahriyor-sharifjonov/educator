@@ -1,5 +1,10 @@
 .courses{
     position: relative;
+    &.pohozh{
+        .courses__swiper{
+            margin-bottom: -30px;
+        }
+    }
     &__el{
         &-top{
             position: absolute;
