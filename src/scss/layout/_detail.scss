@@ -12,6 +12,9 @@
         padding: 16px 20px;
         background: #FFFFFF;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+        @include media(992){
+            display: none;
+        }
         &-link{
             text-decoration: none;
             font-weight: 500;
@@ -22,16 +25,68 @@
     }
     &__acc{
         display: none;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 10px 10px 0px 0px;
+        @include media(992){
+            display: block;
+        }
+        &-btn{
+            padding: 16px 20px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #333333;
+            width: 100%;
+            text-align: left;
+            position: relative;
+            &.active{
+                &::before{
+                    transform: rotate(-180deg);
+                    top: 16px;
+                }
+            }
+            &::before{
+                content: '';
+                transition: 300ms ease-out;
+                position: absolute;
+                top: 14px;
+                right: 15px;
+                width: 24px;
+                height: 24px;
+                background: url('../img/down.svg') center;
+            }
+        }
+        &-content{
+            display: none;
+        }
+        &-link{
+            width: 100%;
+            display: block;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #333333;
+            padding: 0 20px 15px 20px;
+        }
     }
     &__wrap{
         display: flex;
         justify-content: space-between;
+        @include media(992){
+            flex-direction: column;
+        }
     }
     &__left{
         padding-top: 30px;
         min-width: 280px;
         width: 280px;
         position: relative;
+        @include media(992){
+            min-width: 0;
+            width: 100%;
+        }
         &-content{
             padding: 0 15px 20px 15px;
         }
@@ -59,10 +114,23 @@
         border-left: 1px solid #F2F2F2;
         flex: 1 1 auto;
         padding: 30px 15px 20px 60px;
+        @include media(992){
+            border-left: none;
+            border-top: 1px solid #F2F2F2;
+            padding: 20px 15px;
+        }
         &.g-60{
-            padding: 30px 60px;
+            padding: 30px 60px 20px 60px;
             // margin: 0 60px;
             border-right: 1px solid #F2F2F2;
+            @include media(1200){
+                padding: 30px 15px 20px 15px;
+            }
+            @include media(992){
+                border-bottom: 1px solid #F2F2F2;
+                border-right: none;
+                padding: 20px 15px;
+            }
         }
         &.jcsb{
             display: flex;
@@ -84,11 +152,23 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        @include media(992){
+            width: 100%;
+            min-width: 0;
+            align-items: center;
+        }
         &-top{
             flex: 1 1 auto;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            @include media(992){
+                width: 100%;
+                align-items: center;
+            }
+            @include media(576){
+                align-items: flex-start;
+            }
         }
         &-btn{
             background: #A64AC9;
@@ -106,6 +186,10 @@
             text-decoration: none;
             margin-bottom: 15px;
             color: #FFFFFF;
+            @include media(576){
+                margin-left: auto;
+                margin-right: auto;
+            }
             &:hover{
                 background: rgba(#A64AC9, 0.8);
             }
@@ -130,7 +214,10 @@
             font-size: 12px;
             line-height: 15px;
             text-align: right;
-            color: #828282;            
+            color: #828282;  
+            @include media(576){
+                text-align: left;
+            }          
         }
         &-link{
             font-weight: 500;
@@ -138,10 +225,15 @@
             line-height: 17px;
             color: #A64AC9;
             padding: 6px 12px;
+            margin-top: 20px;
             text-decoration: none;
             border: 1px solid #A64AC9;
             border-radius: 5px;
             transition: 300ms ease-out;
+            @include media(576){
+                margin-left: auto;
+                margin-right: auto;
+            }
             &:hover{
                 opacity: 0.8;
             }
@@ -278,6 +370,26 @@
             line-height: 17px;
             text-decoration: none;
             color: #FFFFFF;
+            &.dn{
+                @include media(576){
+                    display: none;
+                }
+            }
+            &.open{
+                display: block !important;
+            }
+        }
+        &-btn{
+            display: none;
+            @include media(576){
+                display: block;
+                margin-top: 15px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                text-decoration-line: underline;
+                color: #FF6A1B;                
+            }
         }
     }
 }
