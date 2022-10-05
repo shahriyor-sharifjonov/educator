@@ -1152,6 +1152,22 @@
   display: block;
 }
 
+.courses__content.active.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.courses__content.block {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px 24px;
+}
+
+.courses__content.block .courses__item {
+  width: calc(25% - 18px);
+}
+
 .courses__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3302,6 +3318,20 @@ input {
             align-items: flex-start;
   }
 
+  .courses__content.block .courses__item {
+    width: calc(50% - 12px);
+    display: none;
+  }
+
+  .courses__content.block .courses__item:nth-child(1),
+  .courses__content.block .courses__item:nth-child(2),
+  .courses__content.block .courses__item:nth-child(3),
+  .courses__content.block .courses__item:nth-child(4),
+  .courses__content.block .courses__item:nth-child(5),
+  .courses__content.block .courses__item:nth-child(6) {
+    display: block;
+  }
+
   .search-sm {
     display: block;
     margin-right: 15px;
@@ -3547,6 +3577,22 @@ input {
 
   .help__item {
     width: 100%;
+  }
+
+  .courses__content.block {
+    gap: 20px;
+  }
+
+  .courses__content.block .courses__item {
+    width: 100%;
+    display: none !important;
+  }
+
+  .courses__content.block .courses__item:nth-child(1),
+  .courses__content.block .courses__item:nth-child(2),
+  .courses__content.block .courses__item:nth-child(3),
+  .courses__content.block .courses__item:nth-child(4) {
+    display: block !important;
   }
 
   .teachers__el-top {

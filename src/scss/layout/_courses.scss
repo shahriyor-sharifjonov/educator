@@ -58,10 +58,45 @@
     &__content{
         display: none;
         &.active{
+            &.block{
+                display: flex;
+            }
             display: block;
         }
         width: 100%;
         position: relative;
+        &.block{
+            flex-wrap: wrap;
+            gap: 30px 24px;
+            @include media(768){
+                gap: 20px;
+            }
+            .courses__item{
+                width: calc(25% - 18px);
+                @include media(1200){
+                    width: calc(50% - 12px);
+                    display: none;
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:nth-child(5),
+                    &:nth-child(6){
+                        display: block;
+                    }
+                }
+                @include media(768){
+                    width: 100%;
+                    display: none !important;
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4){
+                        display: block !important;
+                    }
+                }
+            }
+        }
     }
     &__navigation{
         display: flex;
